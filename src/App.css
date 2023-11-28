@@ -1,7 +1,10 @@
 .App {
   text-align: center;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,20 +17,58 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
   color: white;
+}
+.App-header p {
+  text-align: center;
+font: normal normal normal 16px/21px Mulish;
+letter-spacing: 0.02px;
+color: #36A546CC;
+opacity: 1;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form input {
+  border-radius: 30px;
+  padding: 5px;
+  width: 238px;
+  height: 42px;
+  color: aliceblue;
+  background: #1f191966 0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 3px 3px #fffdfd40, 3px 3px 3px #4a494947;
+  mix-blend-mode: normal;
+  opacity: 1;
+}
+.login-form button {
+  width: 238px;
+height: 42px;
+border-radius: 30px;
+background: transparent linear-gradient(180deg, #00FF2580 0%, #000000 100%, #36A54680 100%) 0% 0% no-repeat padding-box;
+mix-blend-mode: normal;
+border: 2px solid #8CFF0026;
+}
+.App-header label {
+  text-align: center;
+font: normal normal normal 15px/20px Mulish;
+letter-spacing: 0.02px;
+color: #36A546;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
